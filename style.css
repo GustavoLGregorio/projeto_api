@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    border: 2px solid #ccc;
+}
+input#cep {
+    border-right: none;
+}
+
+
+.servico {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    background: #ccc;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.informacoes {
+    padding: 1rem;
+}
+.servico img {
+    width: 100%;
+    padding: 1rem 0.25rem 1rem 1.25rem;
+}
+.servico h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+.servico h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0;
+
+}
+
+.servico .detalhes {
+    margin-top: 0.5rem;
+}
+.servico .detalhes p {
+    margin-bottom: 0;
+}
+.servico .detalhes p i {
+    padding-right: 0.25rem;
+}
