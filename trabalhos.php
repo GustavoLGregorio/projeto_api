@@ -15,54 +15,8 @@
             }
         </style>
     </head>
-    <body id="trabalhos_page">
-        <a href="#" target="_blank">
-            <article class="servico px-0 rounded">
-                <img src="content/icon_api.png" alt="logo do site #">
-                <div class="informacoes">
-                    <h3>Desenvolvedor web</h3>
-                    <h4>Linkedin</h4>
-                    <div class="detalhes">
-                        <p class="local"><i class="bi bi-pin-fill"></i>Curitiba - PR</p>
-                        <p class="postado"><i class="bi bi-clock-fill"></i>à 3 dias</p>
-                        <p class="salario"><i class="bi bi-cash-stack"></i>R$ 1000 a R$ 1500</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="#" target="_blank">
-            <article class="servico px-0 rounded">
-                <img src="content/icon_api.png" alt="logo do site #">
-                <div class="informacoes">
-                    <h3>Desenvolvedor web</h3>
-                    <h4>Linkedin</h4>
-                    <div class="detalhes">
-                        <p class="local"><i class="bi bi-pin-fill"></i>Curitiba - PR</p>
-                        <p class="postado"><i class="bi bi-clock-fill"></i>à 3 dias</p>
-                        <p class="salario"><i class="bi bi-cash-stack"></i>R$ 1000 a R$ 1500</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-        <a href="#" target="_blank">
-            <article class="servico px-0 rounded">
-                <img src="content/icon_api.png" alt="logo do site #">
-                <div class="informacoes">
-                    <h3>Desenvolvedor web</h3>
-                    <h4>Linkedin</h4>
-                    <div class="detalhes">
-                        <p class="local"><i class="bi bi-pin-fill"></i>Curitiba - PR</p>
-                        <p class="postado"><i class="bi bi-clock-fill"></i>à 3 dias</p>
-                        <p class="salario"><i class="bi bi-cash-stack"></i>R$ 1000 a R$ 1500</p>
-                    </div>
-                </div>
-            </article>
-        </a>
-
-
-    <!--php com API abaixo-->
+    <body id="trabalhos_page" style="background: #e8e8e8">
     <?php
-    /*
         // reconhecer se o servidor recebeu a resposta os dados do js
         if($_SERVER["REQUEST_METHOD"] == "POST") {
             //variaveis com os valores do formulario
@@ -86,7 +40,7 @@
                 CURLOPT_CUSTOMREQUEST => "GET",
                 CURLOPT_HTTPHEADER => [
                     "x-rapidapi-host: jsearch.p.rapidapi.com",
-                    "x-rapidapi-key: 0f818b5601mshe0ee11b0773ca27p1d973bjsn33c2ea6bf0d3"
+                    "x-rapidapi-key: d1ec027c9dmshfd2d31884ff49cfp1c8b7djsn42d6791e8d8f"
                 ],
             ]);
             
@@ -138,7 +92,7 @@
                                 <h4><?= $site_empregador ?></h4>
                                 <div class="detalhes">
                                     <p class="local"><i class="bi bi-pin-fill"></i><?= $vaga_cidade . " - " . $vaga_estado ?></p>
-                                    <p class="postado"><i class="bi bi-clock-fill"></i>à <?= $vaga_tempo_postada ?> dias</p>
+                                    <p class="postado"><i class="bi bi-clock-fill"></i>Postado à <?= $vaga_tempo_postada ?> dias</p>
                                     <?php 
                                     // tratativa para checar se a API retornou valores de salario e se são maiores que 0 (muitas vagas não informam)
                                     if( ($vaga_min_salario != null && $vaga_min_salario > 0) && ($vaga_max_salario != null && $vaga_max_salario > 0) ) { ?>
@@ -155,7 +109,6 @@
                 }
             }
         }
-    */
     ?>
     </body>
 </html>

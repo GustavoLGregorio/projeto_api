@@ -15,16 +15,16 @@
         <header class="bg-dark text-light pt-3 pb-2 mb-2 mb-md-3">
             <div class="container">
                 <h1 class="text-center mb-0">Testando API's</h1>
-                <p><i class="bi bi-github"></i> Leia o <a href="#">README</a> no repositório do projeto para mais informações</p>
+                <p><i class="bi bi-github"></i> Leia o <a href="https://github.com/GustavoLGregorio/projeto_api">README</a> no repositório do projeto para mais informações</p>
             </div>
         </header>
         <!--inicio do conteudo principal-->
         <main class="d-grid justify-content-evenly">
-            <div class="row text-dark rounded-4" style="background: #ddda">
+            <div id="row_container" class="row text-dark rounded-4" style="background: #e8e8e8">
                 <div class="col-12 col-md-6 col-lg-4">
                     <!--inicio da area de busca de cep-->
                     <section id="local" class="container">
-                        <h2 class="text-center pt-3">API para encontrar informações em base do CEP</h2>
+                        <h2 class="text-center pt-3">API para encontrar informações em base do CEP (Brasil API)</h2>
                         <form class="input-group rounded py-2 d-flex flex-column gap-2 mb-3">
                             <div class="d-flex flex-row mb-2">
                                 <input id="cep" class="w-75 rounded-start-5 rounded-end-0 text-center border-end-0" type="text" placeholder="Digite seu CEP (somente numeros)">
@@ -42,28 +42,27 @@
                 <div class="col-12 col-md-6 col-lg-4 border">
                     <!--inicio da área de busca de empregos-->
                     <section id="trabalhos" class="container mb-3 mb-lg-0">
-                        <h2 class="text-center pt-3">Scrapper API para buscar empregos em determinada região</h2>
+                        <h2 class="text-center pt-3">Scrapper API para buscar empregos em determinada região (Jsearch API)</h2>
                         <form id="form_trabalhos" class="input-group row-gap-1 mb-3" onsubmit="return enviar_formulario()">
                             <label for="emprego">Digite o emprego:</label>
                             <input name="emprego" class="w-100 ps-2 rounded" type="text" placeholder="Desenvolvedor web">
                             <label for="cidade">Digite a cidade:</label>
                             <input name="cidade" class="w-100 ps-2 rounded" type="text" placeholder="Curitiba">
-                            <input class="d-block w-100 rounded btn btn-danger mt-2" type="submit" value="Buscar">
+                            <input class="d-block w-100 rounded btn btn-outline-danger mt-2" type="submit" value="Buscar">
                         </form>
                         <section>
                             <!--iframe que recebe conteudos da pagina trabalhos.php via ajax-->
-                            <iframe id="container_trabalhos" width="100%" height="380px" src="trabalhos.php" frameborder="0"></iframe>
+                            <iframe id="container_trabalhos" width="100%" height="360px" src="trabalhos.php" frameborder="0"></iframe>
                         </section>
                     </section>
                 </div>
-                <!--em construcao
                 <div class="col-12 col-md-6 col-lg-4">
-                    <--inicio da área de API pessoal-!->
+                    <!--inicio da área de API pessoal-->
                     <section>
                         <h2 class="text-center pt-3">API pessoal</h2>
+                        <p>(em construção)</p>
                     </section>
                 </div>
-                -->
             </div>
         </main>
 

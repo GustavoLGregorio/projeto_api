@@ -5,6 +5,9 @@
 html, body {
     overscroll-behavior: none;
 }
+#row_container {
+    max-width: 1400px;
+}
 /* inicio dos estilos de index.php */
 body h2 {
     font-size: 1.25rem;
