@@ -1,15 +1,33 @@
 * {
     box-sizing: border-box;
 }
-
+/* desliga o comportamento de subir e descer a tela para alem do body, mostrando o html (branco por padrao) */
+html, body {
+    overscroll-behavior: none;
+}
+/* inicio dos estilos de index.php */
+body h2 {
+    font-size: 1.25rem;
+}
+/* estilo dos input */
 input {
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
+    color: var(--bs-darkgray);
+    height: 2.25rem;
 }
-input#cep {
-    border-right: none;
+/* estilo do input desabilitado */
+input:disabled {
+    color: var(--bs-gray);
 }
+/* estilo do input em foco */
+input:focus {
+    transition: 250ms ease-in;
+    outline: none;
+    background-color: #efefef;
+}
+/* fim dos estilos de index.php */
 
-
+/* estilo dos article retornados pelo arquivo "trabalhos.php" */
 .servico {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -17,29 +35,48 @@ input#cep {
     align-items: center;
     margin-bottom: 0.5rem;
 }
-.informacoes {
-    padding: 1rem;
-}
+/* img, h3, h4 nao sao especificados dentro de .informacoes para caso de reuso posterior */
 .servico img {
     width: 100%;
     padding: 1rem 0.25rem 1rem 1.25rem;
 }
-.servico h2 {
-    font-size: 1.25rem;
+.servico h3 {
+    font-size: 1.1rem;
     margin-bottom: 0.25rem;
 }
-.servico h3 {
-    font-size: 1.125rem;
+.servico h4 {
+    font-size: 1.05rem;
     margin-bottom: 0;
 
 }
-
-.servico .detalhes {
+/* informacoes esta dentro do article, detalhes dentro de informacoes */
+.informacoes {
+    padding: 1rem;
+}
+.servico .informacoes .detalhes {
     margin-top: 0.5rem;
 }
-.servico .detalhes p {
+.servico .informacoes .detalhes p {
     margin-bottom: 0;
 }
-.servico .detalhes p i {
+.servico .informacoes .detalhes p i {
     padding-right: 0.25rem;
 }
+
+/* Extra pequeno (XS): < 576px */
+@media (max-width: 575.98px) { }
+
+/* Pequeno (SM): ≥ 576px */
+@media (min-width: 576px) { }
+
+/* Médio (MD): ≥ 768px */
+@media (min-width: 768px) { }
+
+/* Grande (LG): ≥ 992px */
+@media (min-width: 992px) { }
+
+/* Extra Grande (XL): ≥ 1200px */
+@media (min-width: 1200px) { }
+
+/* Extra Extra Grande (XXL): ≥ 1400px */
+@media (min-width: 1400px) { }
