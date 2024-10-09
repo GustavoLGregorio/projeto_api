@@ -17,7 +17,7 @@
     </head>
     <body id="trabalhos_page" style="background: #e8e8e8">
     <?php
-        // reconhecer se o servidor recebeu a resposta os dados do js
+        // reconhecer se o servidor recebeu a resposta do js
         if($_SERVER["REQUEST_METHOD"] == "POST") {
             //variaveis com os valores do formulario
             $emprego = htmlspecialchars($_POST["emprego"]);

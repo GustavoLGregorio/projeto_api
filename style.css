@@ -1,12 +1,17 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 /* desliga o comportamento de subir e descer a tela para alem do body, mostrando o html (branco por padrao) */
 html, body {
     overscroll-behavior: none;
 }
 #row_container {
+    width: 95%;
     max-width: 1400px;
+    background: #e8e8e8;
+    margin: 0 auto;
 }
 /* inicio dos estilos de index.php */
 body h2 {
